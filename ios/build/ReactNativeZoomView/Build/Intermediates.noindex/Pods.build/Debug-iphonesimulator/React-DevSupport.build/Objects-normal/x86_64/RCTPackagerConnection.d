@@ -1,0 +1,29 @@
+dependencies: \
+  /Users/chingyawhao/Documents/Didian/react-native-zoom-view/node_modules/react-native/React/DevSupport/RCTPackagerConnection.mm \
+  /Users/chingyawhao/Documents/Didian/react-native-zoom-view/ios/Pods/Target\ Support\ Files/React-DevSupport/React-DevSupport-prefix.pch \
+  /Users/chingyawhao/Documents/Didian/react-native-zoom-view/node_modules/react-native/React/DevSupport/RCTPackagerConnection.h \
+  /Users/chingyawhao/Documents/Didian/react-native-zoom-view/ios/Pods/Headers/Public/React-Core/React/RCTDefines.h \
+  /Users/chingyawhao/Documents/Didian/react-native-zoom-view/ios/Pods/Headers/Private/React-DevSupport/React/RCTInspectorDevServerHelper.h \
+  /Users/chingyawhao/Documents/Didian/react-native-zoom-view/ios/Pods/Headers/Private/React-DevSupport/React/RCTPackagerConnection.h \
+  /Users/chingyawhao/Documents/Didian/react-native-zoom-view/ios/Pods/Headers/Public/React-Core/React/RCTAssert.h \
+  /Users/chingyawhao/Documents/Didian/react-native-zoom-view/ios/Pods/Headers/Public/React-Core/React/RCTBridge.h \
+  /Users/chingyawhao/Documents/Didian/react-native-zoom-view/ios/Pods/Headers/Public/React-Core/React/RCTBridgeDelegate.h \
+  /Users/chingyawhao/Documents/Didian/react-native-zoom-view/ios/Pods/Headers/Public/React-Core/React/RCTJavaScriptLoader.h \
+  /Users/chingyawhao/Documents/Didian/react-native-zoom-view/ios/Pods/Headers/Public/React-Core/React/RCTBridgeModule.h \
+  /Users/chingyawhao/Documents/Didian/react-native-zoom-view/ios/Pods/Headers/Public/React-Core/React/RCTFrameUpdate.h \
+  /Users/chingyawhao/Documents/Didian/react-native-zoom-view/ios/Pods/Headers/Public/React-Core/React/RCTInvalidating.h \
+  /Users/chingyawhao/Documents/Didian/react-native-zoom-view/ios/Pods/Headers/Public/React-Core/React/RCTBundleURLProvider.h \
+  /Users/chingyawhao/Documents/Didian/react-native-zoom-view/ios/Pods/Headers/Public/React-Core/React/RCTConvert.h \
+  /Users/chingyawhao/Documents/Didian/react-native-zoom-view/ios/Pods/Headers/Public/React-Core/React/RCTAnimationType.h \
+  /Users/chingyawhao/Documents/Didian/react-native-zoom-view/ios/Pods/Headers/Public/React-Core/React/RCTBorderStyle.h \
+  /Users/chingyawhao/Documents/Didian/react-native-zoom-view/ios/Pods/Headers/Public/React-Core/React/RCTLog.h \
+  /Users/chingyawhao/Documents/Didian/react-native-zoom-view/ios/Pods/Headers/Public/React-Core/React/RCTUtils.h \
+  /Users/chingyawhao/Documents/Didian/react-native-zoom-view/ios/Pods/Headers/Public/React-Core/React/RCTPointerEvents.h \
+  /Users/chingyawhao/Documents/Didian/react-native-zoom-view/ios/Pods/Headers/Public/React-Core/React/RCTTextDecorationLineType.h \
+  /Users/chingyawhao/Documents/Didian/react-native-zoom-view/ios/Pods/Headers/Private/yoga/Yoga.h \
+  /Users/chingyawhao/Documents/Didian/react-native-zoom-view/ios/Pods/Headers/Private/yoga/YGEnums.h \
+  /Users/chingyawhao/Documents/Didian/react-native-zoom-view/ios/Pods/Headers/Private/yoga/YGMacros.h \
+  /Users/chingyawhao/Documents/Didian/react-native-zoom-view/ios/Pods/Headers/Private/yoga/YGValue.h \
+  /Users/chingyawhao/Documents/Didian/react-native-zoom-view/ios/Pods/Headers/Private/React-DevSupport/React/RCTPackagerClient.h \
+  /Users/chingyawhao/Documents/Didian/react-native-zoom-view/ios/Pods/Headers/Public/React-RCTWebSocket/React/RCTReconnectingWebSocket.h \
+  /Users/chingyawhao/Documents/Didian/react-native-zoom-view/ios/Pods/Headers/Public/React-RCTWebSocket/React/RCTSRWebSocket.h

@@ -1,0 +1,223 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/main/AndroidManifest.xml:1:1-26:12
+MERGED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/main/AndroidManifest.xml:1:1-26:12
+MERGED from [:react-native-gesture-handler] /Users/chingyawhao/Documents/Didian/react-native-zoom-view/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.react:react-native:0.60.5] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/b2780e2cdb28afdb6b19a098c2d8c301/AndroidManifest.xml:2:1-13:12
+MERGED from [org.webkit:android-jsc:r245459] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/9671489f15503a6952002e0cb2fcca16/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/9f886b7437c6353f26133b9e580a6ce7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/45d4e5c3df3458019654f06769ab1d41/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/0baf437174dfeeadf0041399b9d306a6/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/3b294c0fff52df801fc8ef59f46289ee/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/04bf2264b2a0df1dbab736837d284177/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/177a4556062cd1f580e6fcf428320819/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/01437504d56f8b9e4cf8dd6a00bf58bc/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/a145efd6bc7d9d5d3f3e3e8bab8614f9/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/3aed43939d30ef6cf27406b0d4684324/AndroidManifest.xml:2:1-13:12
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/085611a5da500f70efef798a53c80b6f/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/ece3cefe24b4585ca11d68565ff2e30a/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/ee3920c2b0d29ed909bb7e1a4c9ec736/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/09248fb3f170a14f6f9821e0d27f1507/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/a422f867b535e45695c0470358468137/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/f9dc0d99e58e33b4b0ec2c089f8a60d2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/efaab54fbb7cbceedf5330b6d2c28ff9/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/e06df94dff47892cb6b8d5de7e5a5935/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/93eb1ace17fa5fd1826504e76a595079/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/37c37052ff28d58cbaadaab821aea14e/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/b32a65360e322c5e150f47a3512e07fa/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/444fde21d55d7cb744206cb2de876718/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/882642bcafa9db3549609143228d1a0a/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.1] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/ae11c67fdd46af259821fe66c6405715/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/bc43019af95b29c47384be0f4a797d4c/AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/0bcee147f72e9b044ac79cff72bc0b8c/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/80710d197285887204501b47ea941d55/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/f5d9243691e2477e267e99966cf405e5/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/7872da4421bd443b34b10f0ac44161ff/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/3f635b1d753056a5bbd267cfada8fa96/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/c41fc6dcfdc55397a36dd4d4fbedb1de/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/611631c3bd80351c62bd2e541e9d912a/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/d2a41971a1e83b00b72929440aa7463c/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/ae39f18cb89f62d671cc6ab1c0452a82/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/27579c70e095dd155edda0b61d1e44c7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/1fe332a254974555956bc44e6eff544d/AndroidManifest.xml:2:1-9:12
+INJECTED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/debug/AndroidManifest.xml:2:1-8:12
+INJECTED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/debug/AndroidManifest.xml:2:1-8:12
+INJECTED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/debug/AndroidManifest.xml:2:1-8:12
+	package
+		ADDED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/main/AndroidManifest.xml:2:3-36
+		INJECTED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/main/AndroidManifest.xml:2:3-36
+		INJECTED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/debug/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/main/AndroidManifest.xml:1:1-26:12
+		INJECTED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/debug/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/debug/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/main/AndroidManifest.xml:1:1-26:12
+		INJECTED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/debug/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/main/AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/main/AndroidManifest.xml:4:22-64
+application
+ADDED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/main/AndroidManifest.xml:6:5-24:19
+MERGED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/main/AndroidManifest.xml:6:5-24:19
+MERGED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/main/AndroidManifest.xml:6:5-24:19
+MERGED from [com.facebook.react:react-native:0.60.5] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/b2780e2cdb28afdb6b19a098c2d8c301/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.react:react-native:0.60.5] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/b2780e2cdb28afdb6b19a098c2d8c301/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/3aed43939d30ef6cf27406b0d4684324/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/3aed43939d30ef6cf27406b0d4684324/AndroidManifest.xml:11:5-20
+MERGED from [androidx.core:core:1.0.1] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/ae11c67fdd46af259821fe66c6405715/AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.1] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/ae11c67fdd46af259821fe66c6405715/AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/bc43019af95b29c47384be0f4a797d4c/AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/bc43019af95b29c47384be0f4a797d4c/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.0.1] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/ae11c67fdd46af259821fe66c6405715/AndroidManifest.xml:22:18-86
+	android:label
+		ADDED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/main/AndroidManifest.xml:8:7-39
+		ADDED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/main/AndroidManifest.xml:8:7-39
+	tools:ignore
+		ADDED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/debug/AndroidManifest.xml:7:75-114
+	android:roundIcon
+		ADDED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/main/AndroidManifest.xml:10:7-52
+		ADDED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/main/AndroidManifest.xml:10:7-52
+	tools:targetApi
+		ADDED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/debug/AndroidManifest.xml:7:54-74
+	android:icon
+		ADDED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/main/AndroidManifest.xml:9:7-41
+		ADDED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/main/AndroidManifest.xml:9:7-41
+	android:allowBackup
+		ADDED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/main/AndroidManifest.xml:11:7-34
+		ADDED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/main/AndroidManifest.xml:11:7-34
+	android:theme
+		ADDED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/main/AndroidManifest.xml:12:7-38
+		ADDED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/main/AndroidManifest.xml:12:7-38
+	android:usesCleartextTraffic
+		ADDED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/debug/AndroidManifest.xml:7:18-53
+	android:name
+		ADDED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/main/AndroidManifest.xml:7:7-38
+		ADDED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/main/AndroidManifest.xml:7:7-38
+activity#com.reactnativezoomview.MainActivity
+ADDED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/main/AndroidManifest.xml:13:7-22:18
+	android:label
+		ADDED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/main/AndroidManifest.xml:15:9-41
+	android:windowSoftInputMode
+		ADDED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/main/AndroidManifest.xml:17:9-51
+	android:configChanges
+		ADDED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/main/AndroidManifest.xml:16:9-79
+	android:name
+		ADDED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/main/AndroidManifest.xml:14:9-37
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/main/AndroidManifest.xml:18:9-21:25
+action#android.intent.action.MAIN
+ADDED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/main/AndroidManifest.xml:19:13-65
+	android:name
+		ADDED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/main/AndroidManifest.xml:19:21-62
+category#android.intent.category.LAUNCHER
+ADDED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/main/AndroidManifest.xml:20:13-73
+	android:name
+		ADDED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/main/AndroidManifest.xml:20:23-70
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/main/AndroidManifest.xml:23:7-84
+	android:name
+		ADDED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/main/AndroidManifest.xml:23:17-81
+uses-sdk
+INJECTED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/main/AndroidManifest.xml
+MERGED from [:react-native-gesture-handler] /Users/chingyawhao/Documents/Didian/react-native-zoom-view/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] /Users/chingyawhao/Documents/Didian/react-native-zoom-view/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.60.5] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/b2780e2cdb28afdb6b19a098c2d8c301/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.60.5] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/b2780e2cdb28afdb6b19a098c2d8c301/AndroidManifest.xml:7:5-9:41
+MERGED from [org.webkit:android-jsc:r245459] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/9671489f15503a6952002e0cb2fcca16/AndroidManifest.xml:7:5-9:41
+MERGED from [org.webkit:android-jsc:r245459] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/9671489f15503a6952002e0cb2fcca16/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/9f886b7437c6353f26133b9e580a6ce7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/9f886b7437c6353f26133b9e580a6ce7/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/45d4e5c3df3458019654f06769ab1d41/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/45d4e5c3df3458019654f06769ab1d41/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/0baf437174dfeeadf0041399b9d306a6/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/0baf437174dfeeadf0041399b9d306a6/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/3b294c0fff52df801fc8ef59f46289ee/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/3b294c0fff52df801fc8ef59f46289ee/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/04bf2264b2a0df1dbab736837d284177/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/04bf2264b2a0df1dbab736837d284177/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/177a4556062cd1f580e6fcf428320819/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/177a4556062cd1f580e6fcf428320819/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/01437504d56f8b9e4cf8dd6a00bf58bc/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/01437504d56f8b9e4cf8dd6a00bf58bc/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/a145efd6bc7d9d5d3f3e3e8bab8614f9/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/a145efd6bc7d9d5d3f3e3e8bab8614f9/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/3aed43939d30ef6cf27406b0d4684324/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/3aed43939d30ef6cf27406b0d4684324/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/085611a5da500f70efef798a53c80b6f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/085611a5da500f70efef798a53c80b6f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/ece3cefe24b4585ca11d68565ff2e30a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/ece3cefe24b4585ca11d68565ff2e30a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/ee3920c2b0d29ed909bb7e1a4c9ec736/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/ee3920c2b0d29ed909bb7e1a4c9ec736/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/09248fb3f170a14f6f9821e0d27f1507/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/09248fb3f170a14f6f9821e0d27f1507/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/a422f867b535e45695c0470358468137/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/a422f867b535e45695c0470358468137/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/f9dc0d99e58e33b4b0ec2c089f8a60d2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/f9dc0d99e58e33b4b0ec2c089f8a60d2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/efaab54fbb7cbceedf5330b6d2c28ff9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/efaab54fbb7cbceedf5330b6d2c28ff9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/e06df94dff47892cb6b8d5de7e5a5935/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/e06df94dff47892cb6b8d5de7e5a5935/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/93eb1ace17fa5fd1826504e76a595079/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/93eb1ace17fa5fd1826504e76a595079/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/37c37052ff28d58cbaadaab821aea14e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/37c37052ff28d58cbaadaab821aea14e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/b32a65360e322c5e150f47a3512e07fa/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/b32a65360e322c5e150f47a3512e07fa/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/444fde21d55d7cb744206cb2de876718/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/444fde21d55d7cb744206cb2de876718/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/882642bcafa9db3549609143228d1a0a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/882642bcafa9db3549609143228d1a0a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/ae11c67fdd46af259821fe66c6405715/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/ae11c67fdd46af259821fe66c6405715/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/bc43019af95b29c47384be0f4a797d4c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/bc43019af95b29c47384be0f4a797d4c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/0bcee147f72e9b044ac79cff72bc0b8c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/0bcee147f72e9b044ac79cff72bc0b8c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/80710d197285887204501b47ea941d55/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/80710d197285887204501b47ea941d55/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/f5d9243691e2477e267e99966cf405e5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/f5d9243691e2477e267e99966cf405e5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/7872da4421bd443b34b10f0ac44161ff/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/7872da4421bd443b34b10f0ac44161ff/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/3f635b1d753056a5bbd267cfada8fa96/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/3f635b1d753056a5bbd267cfada8fa96/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/c41fc6dcfdc55397a36dd4d4fbedb1de/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/c41fc6dcfdc55397a36dd4d4fbedb1de/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/611631c3bd80351c62bd2e541e9d912a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/611631c3bd80351c62bd2e541e9d912a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/d2a41971a1e83b00b72929440aa7463c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/d2a41971a1e83b00b72929440aa7463c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/ae39f18cb89f62d671cc6ab1c0452a82/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/ae39f18cb89f62d671cc6ab1c0452a82/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/27579c70e095dd155edda0b61d1e44c7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/27579c70e095dd155edda0b61d1e44c7/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/1fe332a254974555956bc44e6eff544d/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/chingyawhao/.gradle/caches/transforms-2/files-2.1/1fe332a254974555956bc44e6eff544d/AndroidManifest.xml:5:5-7:41
+INJECTED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/debug/AndroidManifest.xml
+INJECTED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/debug/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/debug/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/debug/AndroidManifest.xml
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/debug/AndroidManifest.xml:5:5-77
+	android:name
+		ADDED from /Users/chingyawhao/Documents/Didian/react-native-zoom-view/android/app/src/debug/AndroidManifest.xml:5:22-75
