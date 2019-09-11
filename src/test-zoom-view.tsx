@@ -10,7 +10,7 @@ export default class TestingZoomView extends React.Component<TestingZoomViewProp
       <SafeAreaView style={{flex:1, backgroundColor:'white'}}>
         <View style={{flex:1, padding:24}}>
           <View style={{flex:1, backgroundColor:'blue'}}>
-            <ZoomView width={2000}>
+            <ZoomView width={2000} panBoundary>
               <View style={{height:2000, width:2000, backgroundColor:'red'}}>
                 <View style={{height:100, width:100, backgroundColor:'yellow'}}/>
               </View>

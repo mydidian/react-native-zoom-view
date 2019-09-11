@@ -7,8 +7,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   container: {
-    flex: 1,
-    overflow: 'hidden'
+    flex: 1
   },
   content: {
     overflow: 'visible'
@@ -20,32 +19,18 @@ export default class ZoomView extends React.Component<ZoomViewProps, ZoomViewSta
 
   _baseScale = new Animated.Value(1)
   _pinchScale = new Animated.Value(1)
-  _scale = Animated.multiply(this._baseScale, this._pinchScale).interpolate({
-    inputRange: [0.25, 1.5],
-    outputRange: [0.25, 1.5],
-    extrapolate: 'clamp'
-  })
+  _scale:Animated.AnimatedInterpolation
   _nonNativeBaseScale = new Animated.Value(1)
   _nonNativePinchScale = new Animated.Value(1)
-  _nonNativeScale = Animated.multiply(this._nonNativeBaseScale, this._nonNativePinchScale).interpolate({
-    inputRange: [0.25, 1.5],
-    outputRange: [0.25, 1.5],
-    extrapolate: 'clamp'
-  })
+  _nonNativeScale:Animated.AnimatedInterpolation
   _pinchFocal = {x:new Animated.Value(0), y:new Animated.Value(0)}
 
   _basePosition = {x:new Animated.Value(0), y:new Animated.Value(0)}
   _translatePosition = {x:new Animated.Value(0), y:new Animated.Value(0)}
-  _position = {
-    x: Animated.add(this._basePosition.x, Animated.divide(this._translatePosition.x, this._scale)),
-    y: Animated.add(this._basePosition.y, Animated.divide(this._translatePosition.y, this._scale))
-  }
+  _position:{x:Animated.AnimatedInterpolation, y:Animated.AnimatedInterpolation}
   _nonNativeBasePosition = {x:new Animated.Value(0), y:new Animated.Value(0)}
   _nonNativeTranslatePosition = {x:new Animated.Value(0), y:new Animated.Value(0)}
-  _nonNativePosition = {
-    x: Animated.add(this._nonNativeBasePosition.x, Animated.divide(this._nonNativeTranslatePosition.x, this._nonNativeScale)),
-    y: Animated.add(this._nonNativeBasePosition.y, Animated.divide(this._nonNativeTranslatePosition.y, this._nonNativeScale))
-  }
+  _nonNativePosition:{x:Animated.AnimatedInterpolation, y:Animated.AnimatedInterpolation}
 
   constructor(props:ZoomViewProps) {
     super(props)
@@ -53,6 +38,7 @@ export default class ZoomView extends React.Component<ZoomViewProps, ZoomViewSta
       container: {height:undefined, width:undefined},
       content: {height:undefined, width:undefined}
     }
+    this.initializeScale(props.zoomLimit)
     if(props.setScale) {
       props.setScale(this._scale)
     }
@@ -67,8 +53,11 @@ export default class ZoomView extends React.Component<ZoomViewProps, ZoomViewSta
     this._translatePosition.y.addListener(Animated.event([{value:this._nonNativeTranslatePosition.y}], {useNativeDriver:false}))
   }
   componentDidUpdate(prevProps:ZoomViewProps, prevState:ZoomViewState) {
-    const {setScale, setNonNativeScale, setPosition, setNonNativePosition} = this.props
+    const {zoomLimit, setScale, setNonNativeScale, setPosition, setNonNativePosition} = this.props
     const {container, content} = this.state
+    if(zoomLimit && zoomLimit !== prevProps.zoomLimit) {
+      this.initializeScale(zoomLimit)
+    }
     if(setScale && setScale !== prevProps.setScale) {
       setScale(this._scale)
     }
@@ -80,6 +69,30 @@ export default class ZoomView extends React.Component<ZoomViewProps, ZoomViewSta
     }
     if(setNonNativePosition && (setNonNativePosition !== prevProps.setNonNativePosition || container !== prevState.container || content !== prevState.content)) {
       this.setNonNativePosition()
+    }
+  }
+  initializeScale = (zoomLimit:ZoomViewProps['zoomLimit']) => {
+    this._scale = Animated.multiply(this._baseScale, this._pinchScale)
+    this._nonNativeScale = Animated.multiply(this._nonNativeBaseScale, this._nonNativePinchScale)
+    if(zoomLimit) {
+      this._scale = this._scale.interpolate({
+        inputRange: [zoomLimit.minimum, zoomLimit.maximum],
+        outputRange: [zoomLimit.minimum, zoomLimit.maximum],
+        extrapolate: 'clamp'
+      })
+      this._nonNativeScale = this._nonNativeScale.interpolate({
+        inputRange: [zoomLimit.minimum, zoomLimit.maximum],
+        outputRange: [zoomLimit.minimum, zoomLimit.maximum],
+        extrapolate: 'clamp'
+      })
+    }
+    this._position = {
+      x: Animated.add(this._basePosition.x, Animated.divide(this._translatePosition.x, this._scale)),
+      y: Animated.add(this._basePosition.y, Animated.divide(this._translatePosition.y, this._scale))
+    }
+    this._nonNativePosition = {
+      x: Animated.add(this._nonNativeBasePosition.x, Animated.divide(this._nonNativeTranslatePosition.x, this._nonNativeScale)),
+      y: Animated.add(this._nonNativeBasePosition.y, Animated.divide(this._nonNativeTranslatePosition.y, this._nonNativeScale))
     }
   }
   getPosition = (position:{x:Animated.AnimatedInterpolation, y:Animated.AnimatedInterpolation}, scale:Animated.AnimatedInterpolation) => {
@@ -110,8 +123,12 @@ export default class ZoomView extends React.Component<ZoomViewProps, ZoomViewSta
     {useNativeDriver:true}
   )
   onPinchHandlerStateChange = event => {
+    const {zoomLimit} = this.props
     if(event.nativeEvent.oldState === State.ACTIVE) {
-      const lastScale = Math.min(Math.max((this._baseScale as any).__getAnimatedValue() * event.nativeEvent.scale, 0.25), 1.5)
+      let lastScale = (this._baseScale as any).__getAnimatedValue() * event.nativeEvent.scale
+      if(zoomLimit) {
+        lastScale = Math.min(Math.max(lastScale, zoomLimit.minimum), zoomLimit.maximum)
+      }
       this._baseScale.setValue(lastScale)
       this._pinchScale.setValue(1)
       
@@ -138,55 +155,57 @@ export default class ZoomView extends React.Component<ZoomViewProps, ZoomViewSta
     }
   }
   reboundPosition = () => {
+    const {panBoundary} = this.props
     const {container, content} = this.state
-    const scale = (this._scale as any).__getAnimatedValue()
-    const translateY = ((container.height || 0) - (content.height || 0)) / 2
-    const yScaleDiff = ((content.height || 0) / 2 + translateY) * (1 - scale)
-    const yMax = -yScaleDiff
-    const yMin = (container.height || 0) - (content.height || 0) + yScaleDiff
-    const translateX = ((container.width || 0) - (content.width || 0)) / 2
-    const xScaleDiff = ((content.width || 0) / 2 + translateX) * (1 - scale)
-    const xMax = -xScaleDiff
-    const xMin = (container.width || 0) - (content.width || 0) + xScaleDiff
-    console.log({
-      container: container.width,
-      content: content.width,
-      translateX,
-      scale,
-      position: (this._basePosition.x as any).__getAnimatedValue()
-    })
+    if(panBoundary) {
+      const scale = (this._scale as any).__getAnimatedValue()
 
-    const rebound = (value:Animated.Value, boundary:number[]) => {
-      const number = (value as any).__getAnimatedValue()
-      if(number < boundary[0]) {
-        return Animated.timing(value, {
-          toValue: boundary[0],
-          easing: Easing.inOut(Easing.quad),
-          useNativeDriver: true
-        })
-      } else if(number > boundary[1]) {
-        return Animated.timing(value, {
-          toValue: boundary[1],
-          easing: Easing.inOut(Easing.quad),
-          useNativeDriver: true
-        })
-      } else {
-        return undefined
+      const containerHeight = (container.height || 0)
+      const contentHeight = (content.height || 0)
+      const yTranslateOrigin = (containerHeight - contentHeight) / 2
+      const yScaleDiff = yTranslateOrigin * (1 - scale) + contentHeight * (1 - scale)
+      const yMax = -yScaleDiff
+      const yMin = containerHeight - contentHeight + yScaleDiff
+
+      const containerWidth = (container.width || 0)
+      const contentWidth = (content.width || 0)
+      const xTranslateOrigin = (containerWidth - contentWidth) / 2
+      const xScaleDiff = xTranslateOrigin * (1 - scale) + contentWidth * (1 - scale)
+      const xMax = -xScaleDiff
+      const xMin = containerWidth - contentWidth + xScaleDiff
+
+      console.log(yTranslateOrigin * (1 - scale), contentHeight * (1 - scale), xTranslateOrigin * (1 - scale), contentWidth * (1 - scale))
+  
+      const rebound = (value:Animated.Value, boundary:number[]) => {
+        const number = (value as any).__getAnimatedValue()
+        if(number < boundary[0]) {
+          return Animated.timing(value, {
+            toValue: boundary[0],
+            easing: Easing.inOut(Easing.quad),
+            useNativeDriver: true
+          })
+        } else if(number > boundary[1]) {
+          return Animated.timing(value, {
+            toValue: boundary[1],
+            easing: Easing.inOut(Easing.quad),
+            useNativeDriver: true
+          })
+        } else {
+          return undefined
+        }
       }
+      const animations = [
+        rebound(this._basePosition.y, yMin > yMax? [(yMax + yMin) / 2, (yMax + yMin) / 2]:[yMin, yMax]),
+        rebound(this._basePosition.x, xMin > xMax? [(xMax + xMin) / 2, (xMax + xMin) / 2]:[xMin, xMax])
+      ].filter(rebound => !!rebound)
+      Animated.parallel(animations).start()
     }
-    const animations = [
-      rebound(this._basePosition.y, yMin > yMax? [(yMax + yMin) / 2, (yMax + yMin) / 2]:[yMin, yMax]),
-      rebound(this._basePosition.x, xMin > xMax? [(xMax + xMin) / 2, (xMax + xMin) / 2]:[xMin, xMax])
-    ].filter(rebound => !!rebound)
-    Animated.parallel(animations).start()
   }
   render() {
-    const {children, width} = this.props
+    const {children, width, overflow} = this.props
     const {container, content} = this.state
-    const positionX = this._position.x
-    const positionY = this._position.y
-    const translateY = ((container.height || 0) - (content.height || 0)) / 2
-    const translateX = ((container.width || 0) - (content.width || 0)) / 2
+    const xTranslateOrigin = ((container.width || 0) - (content.width || 0)) / 2
+    const yTranslateOrigin = ((container.height || 0) - (content.height || 0)) / 2
     return (
       <PanGestureHandler
         ref={this.panRef}
@@ -202,15 +221,15 @@ export default class ZoomView extends React.Component<ZoomViewProps, ZoomViewSta
             onGestureEvent={this.onPinchGestureEvent}
             onHandlerStateChange={this.onPinchHandlerStateChange}
           >
-            <Animated.View onLayout={this.setContainerDimension} style={styles.container} collapsable={false}>
+            <Animated.View onLayout={this.setContainerDimension} style={[styles.container, {overflow:overflow? 'visible':'hidden'}]} collapsable={false}>
               <Animated.View onLayout={this.setContentDimension} style={[styles.content, {width}, {transform: [
-                {translateY},
-                {translateX},
+                {translateX:xTranslateOrigin},
+                {translateY:yTranslateOrigin},
                 {scale:this._scale},
-                {translateY:-translateY},
-                {translateX:-translateX},
-                {translateY:positionY},
-                {translateX:positionX}
+                {translateX:-xTranslateOrigin},
+                {translateY:-yTranslateOrigin},
+                {translateX:this._position.x},
+                {translateY:this._position.y}
               ]}]}>
                 {children}
               </Animated.View>
@@ -227,6 +246,12 @@ interface ZoomViewProps {
   setPosition?: (position:{x:Animated.Animated, y:Animated.Animated}) => void
   setNonNativePosition?: (position:{x:Animated.Animated, y:Animated.Animated}) => void
   width?: number
+  zoomLimit?: {
+    maximum: number
+    minimum: number
+  }
+  panBoundary?: boolean
+  overflow?: boolean
 }
 interface ZoomViewState {
   container: {
